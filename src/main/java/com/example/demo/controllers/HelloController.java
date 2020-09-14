@@ -12,4 +12,8 @@ public @ResponseBody String hello() {
 	return "Hello";
 }
 
+@RequestMapping("/v")
+public String HelloWithView() {
+	return "index";
+}
 }

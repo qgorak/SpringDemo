@@ -1,1 +1,18 @@
 <h1>Hello</h1>
+<ul>
+{{#orga}}
+	<li>{{name}}</li>
+	<li>Groupes</li>
+	<ul>
+		{{#groups}}
+		<li>{{name}}</li>
+		<li>Users:</li>
+			<ol>
+				{{#users}}
+				<li>{{login}}</li>
+				{{/users}}
+			</ol>
+		{{/groups}}
+	</ul>
+{{/orga}}
+</ul>
